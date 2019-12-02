@@ -1,0 +1,24 @@
+﻿<Window x:Class="Trrp_Lab1_.MainForm.MainWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Trrp_Lab1_.MainForm"
+        mc:Ignorable="d"
+        Title="MainWin" Height="450" Width="800">
+    <DockPanel>
+        <Grid DockPanel.Dock="Left" Width="200"></Grid>
+        <TabControl DockPanel.Dock="Right">
+            <TabItem Header="Создать беседу">
+                <Grid></Grid>
+            </TabItem>
+            <TabItem Header="Изменить назвнаие беседы"></TabItem>
+            <TabItem Header="Удалить беседу"></TabItem>
+            <TabItem Header="Написать сообщение"></TabItem>
+            <TabItem Header="Редактировать сообщение"></TabItem>
+            <TabItem Header="Удалить сообщение"></TabItem>
+            
+        </TabControl>
+        
+    </DockPanel>
+</Window>
