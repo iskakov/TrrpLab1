@@ -5,20 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Trrp_Lab1_.MainForm"
         mc:Ignorable="d"
-        Title="MainWin" Height="450" Width="800">
-    <DockPanel>
-        <Grid DockPanel.Dock="Left" Width="200"></Grid>
-        <TabControl DockPanel.Dock="Right">
-            <TabItem Header="Создать беседу">
-                <Grid></Grid>
-            </TabItem>
-            <TabItem Header="Изменить назвнаие беседы"></TabItem>
-            <TabItem Header="Удалить беседу"></TabItem>
-            <TabItem Header="Написать сообщение"></TabItem>
-            <TabItem Header="Редактировать сообщение"></TabItem>
-            <TabItem Header="Удалить сообщение"></TabItem>
-            
-        </TabControl>
-        
-    </DockPanel>
+        Title="MainWin" Height="375" Width="322">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Действия" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30"></Label>
+        <StackPanel Margin="10" Grid.Row="1">
+            <Button Content="Создать беседу" Margin="0,10"></Button>
+            <Button Content="Изменить название беседы" Margin="0,10"></Button>
+            <Button Content="Удалить беседу" Margin="0,10"></Button>
+            <Button Content="Написать сообщение" Margin="0,10"></Button>
+            <Button Content="Редактировать сообщение" Margin="0,10"></Button>
+            <Button Content="Удалить сообщение" Margin="0,10"></Button>
+        </StackPanel>
+    </Grid>
 </Window>
