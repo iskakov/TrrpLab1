@@ -27,7 +27,9 @@ namespace Trrp_Lab1_.Auth
         public WebBrooser(string uri)
         {
             InitializeComponent();
+           // web.Source = new Uri("vk.com/logout");
             web.Source = new Uri(uri);
+
         }
 
         private void web_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e)

@@ -9,14 +9,42 @@
     <DockPanel>
         <Grid DockPanel.Dock="Left" Width="200"></Grid>
         <TabControl DockPanel.Dock="Right">
-            <TabItem Header="Создать беседу">
-                <Grid></Grid>
+            <TabItem Header="Просмотр\Изменение статуса">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Статус"/>
+                    <TextBox Grid.Row="0" Grid.ColumnSpan="2" Grid.Column="1" x:Name="status"/>
+                    <Button x:Name="loadButt" Grid.Row="1" Grid.Column="1" Width="auto" Margin="10" Content="Загрузить" Click="loadButt_Click" />
+                    <Button x:Name="saveButt" Grid.Row="1" Grid.Column="2"  Width="auto" Margin="10"  Content="Сохранить" Click="saveButt_Click"/>
+                </Grid>
             </TabItem>
-            <TabItem Header="Изменить назвнаие беседы"></TabItem>
-            <TabItem Header="Удалить беседу"></TabItem>
-            <TabItem Header="Написать сообщение"></TabItem>
-            <TabItem Header="Редактировать сообщение"></TabItem>
-            <TabItem Header="Удалить сообщение"></TabItem>
+            <TabItem Header="Просмотреть\Создать запись страницы">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Введите сообщение"/>
+                    <TextBox Grid.Row="0" Grid.ColumnSpan="2" Grid.Column="1" x:Name="post"/>
+                    <Button x:Name="loadButtPost" Grid.Row="1" Grid.Column="1" Width="auto" Margin="10" Content="Загрузить" Click="loadButtPost_Click" />
+                    <Button x:Name="saveButtPost" Grid.Row="1" Grid.Column="2"  Width="auto" Margin="10"  Content="Сохранить" Click="saveButtPost_Click"/>
+                    <Button x:Name="delButtPost" Grid.Row="1" Grid.Column="0"  Width="auto" Margin="10"  Content="Удалить последний пост" Click="delButtPost_Click"/>
+                </Grid>
+            </TabItem>
+           
             
         </TabControl>
         
